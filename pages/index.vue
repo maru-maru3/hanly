@@ -1,33 +1,40 @@
 <template>
-  <div class="wrap">
-    <div class="txt">テストです</div>
-    <SimpleForm initial-value="初期値だよ" @submit="onSubmit" />
+  <div>
+    <div class="imgWrap">
+      <img
+        class="img"
+        src="https://res.cloudinary.com/kiyopikko/image/upload/v1561802660/hanly-splash_ushtah.png"
+        alt
+        :width="178"
+      />
+    </div>
+    <div class="buttons">
+      <BaseButton to="/signin">ログイン</BaseButton>
+      <BaseButton to="/signup">新規登録</BaseButton>
+    </div>
   </div>
 </template>
 
 <script>
-import SimpleForm from '~/components/SimpleForm'
-
-export default {
-  components: {
-    SimpleForm,
-  },
-  methods: {
-    onSubmit(value) {
-      // console.log(value)
-    },
-  },
-}
+export default {}
 </script>
 
-<style lang="scss" scoped>
-.wrap {
-  max-width: 40rem;
-  margin: 0 auto;
+<style>
+.imgWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 10.25rem);
 }
 
-.txt {
-  margin: 10rem 0 2rem;
-  text-align: center;
+.buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
 }
 </style>
