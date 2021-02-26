@@ -26,8 +26,10 @@
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.8.3",
     "dayjs": "^1.10.4",
+    "leaflet": "^1.7.1",
     "nuxt": "^2.14.12",
     "ress": "^3.0.0",
+    "vue-avatar-cropper": "^1.0.9",
     "vue-browser-geolocation": "^1.8.0"
   },
   "devDependencies": {
