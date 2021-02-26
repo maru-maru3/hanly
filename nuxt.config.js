@@ -20,7 +20,7 @@ export default {
   css: ['ress', '~/assets/css/foundation.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/geolocation', '~/plugins/dayjs'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
